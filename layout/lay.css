@@ -1,5 +1,6 @@
 main {
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     background-image: url(https://ucarecdn.com/761233c4-7224-418d-b151-ea7bc1196250/);
 }
@@ -21,13 +22,35 @@ li {
     flex-basis: 350px;
 }
 
-img {
-    background-color: white;
-    background-size: 50% 50%;
+ul > img {
     height: 51px;
     padding-top: 1em;
 }
 
-conteiner > h1 {
-    margin: auto;
+.cont {
+    
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+div {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+
+div > h1 {
+    text-align: center;
+}
+
+.bor {
+    margin-top: 15vh;
+    border: 2px solid black;
+    border-radius: 43px;
+    height: 6vh;
+    width: 22vw;
+}
+
+
+
