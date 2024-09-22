@@ -323,6 +323,7 @@ console.log(findComponent(11));
 
 //isAcronym
 
+/*
 function isAcronym(words, s) {
     let s1 = '';
     let flag = false;
@@ -338,3 +339,15 @@ function isAcronym(words, s) {
 }
 
 console.log(isAcronym(["alice","bob","charlie"], "abc"))
+*/
+
+
+//concat array
+
+function getConcatenation(nums) {
+    let con_1 = nums.slice();
+    
+    let con_2 = con_1.concat(nums);
+    return con_2;
+}
+console.log(getConcatenation([1, 2, 3, 4]));
