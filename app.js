@@ -344,10 +344,67 @@ console.log(isAcronym(["alice","bob","charlie"], "abc"))
 
 //concat array
 
+/*
 function getConcatenation(nums) {
     let con_1 = nums.slice();
     
     let con_2 = con_1.concat(nums);
     return con_2;
 }
-console.log(getConcatenation([1, 2, 3, 4]));
+console.log(getConcatenation([1, 2, 3, 4])); */
+
+
+//num of good pairs
+
+/*
+function numIdentical(nums) {
+    let count = 0;
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] == nums[j]) {
+                count += 1;
+            }
+        }
+    }
+    return count;
+}
+
+numIdentical([1,2,3,1,1,3]); */
+
+//singleNum
+
+function singleNumber(nums) {
+    let count = {
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0,
+        5: 0,
+        6: 0,
+        7: 0,
+        8: 0,
+        9: 0,
+        0: 0
+    }
+    
+    let con = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        for (let [key, value] of Object.entries(count)) {
+            if (key == nums[i]) {
+                /*console.log(key, nums[i], key == nums[i])*/
+                count[key] += 1;
+            }
+        }
+    }
+
+    for (const [key, value] of Object.entries(count)) {
+        if (value == 1) {
+            con = key;
+        }
+    }
+
+    return console.log(con);
+
+}
+singleNumber([4,1,2,1,2]);
