@@ -373,6 +373,7 @@ numIdentical([1,2,3,1,1,3]); */
 
 //singleNum
 
+/*
 function singleNumber(nums) {
     let count = {
         1: 0,
@@ -393,7 +394,7 @@ function singleNumber(nums) {
         for (let [key, value] of Object.entries(count)) {
             if (key == nums[i]) {
                 /*console.log(key, nums[i], key == nums[i])*/
-                count[key] += 1;
+               /* count[key] += 1;
             }
         }
     }
@@ -407,4 +408,24 @@ function singleNumber(nums) {
     return console.log(con);
 
 }
-singleNumber([4,1,2,1,2]);
+singleNumber([4,1,2,1,2]); */
+
+
+//dif of sums
+
+function difSums(n, m) {
+    let difNums = 0;
+    let notdifNums = 0;
+    for (let i = 0; n >= i; i++) {
+        if (i % m == 0) {
+            difNums += i;
+        }
+        else {
+            notdifNums += i;
+        }
+    }
+    return notdifNums - difNums;
+    
+}
+
+console.log(difSums(10, 3));
