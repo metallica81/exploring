@@ -27,7 +27,7 @@ li {
     display: inline;
 }
 
-.block1 {
+.li_block {
     font-weight: bold;
     flex-basis: 350px;
 }
@@ -56,16 +56,20 @@ div > h1 {
 
 .bor {
     margin-top: 15vh;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 43px;
-    height: 6vh;
+    height: 8vh;
     width: 22vw;
+    position: relative;
+}
+
+.bor > p {
+    position: absolute;
 }
 
 /*Начало условной следующей страницы
 замечания по первой:
 - запросить не по центру внутри границ
-- запросить заходит за границы во вромя изменения размеров браузера
 - изменить шрифты, размеры и цвета*/
 
 
@@ -115,9 +119,66 @@ h5 {
     margin-top: 20vh;
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 40vh 40vh;
+    position: relative;
 }
 
 .block1 > img {
+    width: 45vw;
+
+}
+
+.block2 {
     height: 70vh; 
 }
+
+.block3 {
+    position: absolute;
+    height: 15vh;
+    top: 0;
+}
+.block3 > img:nth-child(1) {
+    transform: rotate(180deg);
+    height: 50px;
+    position: absolute;
+    top: 5vh;
+    right: -4vw;
+}
+
+.block3 img:not(:first-child) {
+    height: 50px;
+    position: absolute;
+    bottom: -17vh;
+    right: 35vw;
+}
+
+.block3 > p {
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.block4 {
+    height: 20vh;
+    width: 55vw;
+    position: absolute;
+    bottom: 40vh;
+}
+
+.block4 > p:first-child {
+    font-size: 18pt;
+    text-align: center;
+}
+
+.block5 {
+    font-size: 10pt;
+    color: hsla(0, 0%, 0%, 0.338);
+    height: 20vh;
+    width: 55vw;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*сделать размеры и шрифты
+разобраться с картинкой
+сохранить в git*/
