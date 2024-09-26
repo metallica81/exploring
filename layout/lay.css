@@ -140,15 +140,15 @@ h5 {
     transform: rotate(180deg);
     height: 50px;
     position: absolute;
-    top: 5vh;
-    right: -4vw;
+    top: 30px;
+    right: -55px;
 }
 
 .block3 img:not(:first-child) {
     height: 50px;
     position: absolute;
-    bottom: -17vh;
-    right: 35vw;
+    bottom: -60px;
+    right: 520px;
 }
 
 .block3 > p {
@@ -157,11 +157,19 @@ h5 {
     text-align: center;
 }
 
+.block2 > .bor {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 150px;
+}
+
 .block4 {
     height: 20vh;
     width: 55vw;
     position: absolute;
-    bottom: 40vh;
+    bottom: 200px;
 }
 
 .block4 > p:first-child {
@@ -175,10 +183,23 @@ h5 {
     height: 20vh;
     width: 55vw;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
+    text-align: center;
+}
+
+/*создание страницы основные услуги*/
+
+.title_name {
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 }
 
 
-/*сделать размеры и шрифты
-разобраться с картинкой
-сохранить в git*/
+.third {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    position: relative;
+}
