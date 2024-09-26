@@ -413,6 +413,7 @@ singleNumber([4,1,2,1,2]); */
 
 //dif of sums
 
+/*
 function difSums(n, m) {
     let difNums = 0;
     let notdifNums = 0;
@@ -428,4 +429,20 @@ function difSums(n, m) {
     
 }
 
-console.log(difSums(10, 3));
+console.log(difSums(10, 3)); */
+
+//sum of sq
+
+/* 
+function sumSq(nums) {
+    let count = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums.length % (i + 1) == 0) {
+            
+            count += nums[i] * nums[i];
+        }
+    }
+
+    return count;
+}
+console.log(sumSq([1,2,3,4])); */
