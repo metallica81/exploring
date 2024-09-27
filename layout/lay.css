@@ -200,6 +200,60 @@ h5 {
 
 .third {
     display: grid;
-    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: 600px;
     position: relative;
+    gap: 50px;
 }
+
+.third  h4 {
+    text-transform: uppercase;
+    font-size: 15pt;
+    font-weight: normal;
+    justify-self: left;
+    align-self: normal;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.third > div  {
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    border: 1px ridge grey;
+    border-radius: 43px;
+    box-shadow: 2px 1px 3px #777;
+}
+
+.third  p {
+    font-size: 10pt;
+}
+
+.service_label {
+    width: 0;
+    height: 0;
+    border-top: 64px solid grey;
+    border-right: 64px solid grey;
+    border-bottom: 64px solid transparent;
+    border-left: 64px solid transparent;
+    justify-self: end;
+    align-self: start;
+    border-radius: 0px 43px 0px 0px;
+    margin-right: -20px;
+    margin-top: -20px;
+}
+
+
+/*
+.third .tranp {
+    color: hsla(0, 0%, 0%, 0.338);
+    margin-bottom: 0;
+}
+*/
+
+
+/*доделать лейблы (картинка svg)
+добавить иконки внизу и изменение при наведение
+добавить адаптивности*/
+
+
