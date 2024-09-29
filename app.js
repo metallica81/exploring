@@ -446,3 +446,14 @@ function sumSq(nums) {
     return count;
 }
 console.log(sumSq([1,2,3,4])); */
+
+//len of last word
+
+function len_word(s) {
+    let s_1 = s.split(" ");
+    
+    console.log(s_1);
+    return s_1.at(-1).length;
+    
+}
+console.log(len_word("   fly me   to   the moon  "));

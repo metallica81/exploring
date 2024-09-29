@@ -243,6 +243,13 @@ h5 {
     margin-top: -20px;
 }
 
+.card_comp {
+    filter: invert(2%);
+    justify-self: end;
+    align-self: start;
+    margin-top: -1000px;
+}
+
 
 /*
 .third .tranp {
