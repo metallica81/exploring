@@ -5,12 +5,23 @@ main {
     height: 100vh;
     width: 100vw;
     background-size: cover;
-    background-image: url(https://ucarecdn.com/761233c4-7224-418d-b151-ea7bc1196250/);
+    background: rgba(0, 0, 0, 0.5) url(https://ucarecdn.com/761233c4-7224-418d-b151-ea7bc1196250/);
+    background-blend-mode: darken;
+    background-position:center top;
     margin-bottom: 6vh;
     color: white;
+    
 }
 
-ul {
+.cont_1 img {
+    margin-top: 40px;
+}
+
+.cont_1 img:hover {
+    cursor: pointer;
+}
+
+.first_page_ul {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
@@ -18,10 +29,6 @@ ul {
     line-height: 5em;
     background-color: rgba(255,255,255,0.3);
 }
-
-
-
-
 
 li {
     display: inline;
@@ -32,26 +39,25 @@ li {
     flex-basis: 350px;
 }
 
-ul > img {
+.first_page_ul > img {
     height: 51px;
     padding-top: 1em;
 }
 
+.cont h1 {
+    text-align: center;
+}
+
 .cont {
-    
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
-div {
+.cont div {
     display: grid;
     justify-content: center;
     place-items: center;
-}
-
-div > h1 {
-    text-align: center;
 }
 
 .bor {
@@ -63,17 +69,20 @@ div > h1 {
     position: relative;
 }
 
+.bor:hover {
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+}
+
 .bor > p {
     position: absolute;
 }
 
-/*Начало условной следующей страницы
-замечания по первой:
-- запросить не по центру внутри границ
-- изменить шрифты, размеры и цвета*/
-
 
 .common {
+    display: grid;
+    place-items: center;
     height: 50vh;
     width: 90vw;
     background-size: cover;
@@ -113,28 +122,35 @@ h5 {
     margin-bottom: 4vh;
 }
 
-/*Начинаю новый этап*/
-
 .second {
     margin-top: 20vh;
     display: grid;
+    justify-content: center;
     grid-template-columns: 50vw 50vw;
     position: relative;
 }
 
 .block1 > img {
     width: 45vw;
-
+    display: grid;
+    justify-content: center;
+    place-items: center;
 }
 
 .block2 {
-    height: 70vh; 
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    place-items: center; 
 }
 
 .block3 {
     position: absolute;
     height: 15vh;
     top: 0;
+    display: grid;
+    justify-content: center;
+    place-items: center;
 }
 .block3 > img:nth-child(1) {
     transform: rotate(180deg);
@@ -142,6 +158,9 @@ h5 {
     position: absolute;
     top: 30px;
     right: -55px;
+    display: grid;
+    justify-content: center;
+    place-items: center;
 }
 
 .block3 img:not(:first-child) {
@@ -163,6 +182,15 @@ h5 {
     color: white;
     position: absolute;
     bottom: 150px;
+    box-shadow: 1px 1px 4px 1px gray;
+}
+
+.block2 > .bor:hover {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 150px;
 }
 
 .block4 {
@@ -170,6 +198,9 @@ h5 {
     width: 55vw;
     position: absolute;
     bottom: 200px;
+    display: grid;
+    justify-content: center;
+    place-items: center;
 }
 
 .block4 > p:first-child {
@@ -185,7 +216,16 @@ h5 {
     position: absolute;
     bottom: -50px;
     text-align: center;
+    display: grid;
+    justify-content: center;
+    place-items: center;
 }
+
+.block2 .bor {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+} 
 
 /*создание страницы основные услуги*/
 
@@ -200,10 +240,18 @@ h5 {
 
 .third {
     display: grid;
+    justify-content: center;
+    place-items: center;
     grid-template-columns: 340px 340px 340px;
     grid-template-rows: 600px;
     position: relative;
     gap: 50px;
+}
+
+.third div {
+    display: grid;
+    justify-content: center;
+    place-items: center;
 }
 
 .third  h4 {
@@ -212,8 +260,8 @@ h5 {
     font-weight: normal;
     justify-self: left;
     align-self: normal;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 30px;
+    margin-top: -120px;
 }
 
 .third > div  {
@@ -225,17 +273,22 @@ h5 {
     box-shadow: 2px 1px 3px #777;
 }
 
-.third  p {
+
+.third  .text_desctription {
     font-size: 10pt;
+    justify-self: left;
+    align-self: normal;
+    margin-left: 30px;
+    margin-top: -65px;
 }
 
 .service_label {
     width: 0;
     height: 0;
-    border-top: 64px solid grey;
-    border-right: 64px solid grey;
-    border-bottom: 64px solid transparent;
-    border-left: 64px solid transparent;
+    border-top: 80px solid grey;
+    border-right: 80px solid grey;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid transparent;
     justify-self: end;
     align-self: start;
     border-radius: 0px 43px 0px 0px;
@@ -248,21 +301,55 @@ h5 {
 }
 
 .svg_container {
-    margin-right: -50px;
-    margin-top: -50px;
+    margin-right: -65px;
+    margin-top: -65px;
+}
+
+.search_new > img {
+    width: 40px;
+}
+
+.search_new {
+    display: grid;
+    grid-template-rows: 20px;
+    grid-template-columns: 70px 120px 70px;
+}
+
+.search_new:hover *{
+    cursor: pointer;
+    stroke: #29A28C;
+    color: #29A28C;
+    filter: invert(60%);
 }
 
 
+/*create our projects*/
+
+.our_projects {
+    display: flex;
+    flex-wrap: nowrap;
+}
 /*
-.third .tranp {
-    color: hsla(0, 0%, 0%, 0.338);
-    margin-bottom: 0;
+.right_hand {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-items: left;
+    gap: 50px;
+    margin-left: 15px;
 }
-*/
+/*
+.right_hand .cent_description {
+    max-width: 450px;
+}
 
+.right_hand > h1 {
+    
+}
 
-/*доделать лейблы (картинка svg)
-добавить иконки внизу и изменение при наведение
-добавить адаптивности*/
+/*переход с первой страницы на услуги
+смена цвета кнопок
+выравнять текст
+адаптивность*/
 
 
