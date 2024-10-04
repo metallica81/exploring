@@ -313,6 +313,7 @@ h5 {
     display: grid;
     grid-template-rows: 20px;
     grid-template-columns: 70px 120px 70px;
+    place-items: center;
 }
 
 .search_new:hover *{
@@ -329,27 +330,74 @@ h5 {
     display: flex;
     flex-wrap: nowrap;
 }
-/*
+
 .right_hand {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
     justify-items: left;
-    gap: 50px;
+    gap: 62px;
     margin-left: 15px;
 }
-/*
+
 .right_hand .cent_description {
     max-width: 450px;
 }
 
-.right_hand > h1 {
-    
+.our_projects-1 .bor {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 4px 1px gray;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 100px;
 }
 
-/*переход с первой страницы на услуги
-смена цвета кнопок
-выравнять текст
-адаптивность*/
+.our_projects-1  .bor:hover {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+}
+
+/* .right_hand > h1 {
+    
+} */
+
+
+/*process of work*/
+
+.our_projects-2 .right_hand {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-items: left;
+    gap: 66px;
+    margin-left: 15px;
+}
+
+/* instrum and technologies */
+
+.inst_icons_1throw {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.inst_icons_2throw {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.oracl_wpf {
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+
 
 
