@@ -13,7 +13,7 @@ main {
     
 }
 
-.cont_1 img {
+.cont_1 {
     margin-top: 40px;
 }
 
@@ -30,18 +30,29 @@ main {
     background-color: rgba(255,255,255,0.3);
 }
 
-li {
+.svg_element {
+    margin-top: 20px;
+
+}
+
+.first_page_ul li {
     display: inline;
 }
 
-.li_block {
-    font-weight: bold;
-    flex-basis: 350px;
+.first_page_ul li:hover {
+    color: #29A28C;
 }
 
-.first_page_ul > img {
-    height: 51px;
-    padding-top: 1em;
+.first_page_ul .li_block {
+    font-weight: bold;
+    font-size: 17px;
+    flex-basis: 350px;
+    display: flex;
+    gap: 10px;
+}
+
+.first_page_ul .li_block:hover {
+    color: white;
 }
 
 .cont h1 {
@@ -58,6 +69,10 @@ li {
     display: grid;
     justify-content: center;
     place-items: center;
+}
+
+.cont .arrow {
+    margin-top: 50px;
 }
 
 .bor {
@@ -379,23 +394,42 @@ h5 {
 
 /* instrum and technologies */
 
+.instruments_tech svg {
+    width: 75px;
+}
 .inst_icons_1throw {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: center;
 }
 
 .inst_icons_2throw {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .oracl_wpf {
     display:flex;
     flex-direction: column;
+    
 }
 
+.wpf {
+    margin-top: 50px;
+    margin-bottom:-50px;
+}
+
+/* survey page */
+
+.survey {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 
 
