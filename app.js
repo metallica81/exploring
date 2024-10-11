@@ -449,6 +449,7 @@ console.log(sumSq([1,2,3,4])); */
 
 //len of last word
 
+/*
 function len_word(s) {
     let s_1 = s.split(" ");
     
@@ -456,4 +457,46 @@ function len_word(s) {
     return s_1.at(-1).length;
     
 }
-console.log(len_word("   fly me   to   the moon  "));
+console.log(len_word("   fly me   to   the moon  ")); */
+
+
+//dublicate num
+
+/*
+function dupblicate(nums) {
+    if (nums.length <= 1) return nums.length;
+
+    let k = 1;
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] !== nums[i-1]) {
+            nums[k] = nums[i];
+            k++;
+        }
+    }
+
+    return k;
+}
+
+console.log(dupblicate([1, 1, 2])); */
+
+//valid palindrome
+
+/*
+var isPalindrome = function(s) {
+    let not_space = [];
+    not_space = s.split(' ');
+    let lower_not = not_space.map(word => word.toLowerCase());
+    let str_lower = '';
+    lower_not.forEach(element => {
+        str_lower += element;
+    });
+    return str_lower;
+};
+console.log(isPalindrome('A man, a plan, a canal: Panama')); */
+
+//rm element
+
+var removeElement = function(nums, val) {
+    let num;
+    num = nums.remove()
+};
