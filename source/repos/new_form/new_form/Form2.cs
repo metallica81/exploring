@@ -8,7 +8,7 @@ namespace new_form
 
     public partial class Form2 : Form 
     {
-        public Form2(int result, int count, string operName)
+        public Form2(int result, int count, string operName) //4-ый способ
         {
             InitializeComponent();
             
@@ -16,8 +16,6 @@ namespace new_form
             label2.Text = $"Количество операций: {count}";
             Text = operName;
         }
-
-        
 
         public int result;
         public int count;
@@ -36,11 +34,12 @@ namespace new_form
         }
 
         private string data;
-        public string Data2
+        public string Data2 //второй способ передачи данных
         {
 
             get { return data; }
             set { data = value; label1.Text = value; }
+
         }
     }
 }

@@ -97,14 +97,14 @@ namespace new_form
                 }
 
                 Data.Result = Power(baseNumber, exponent);
-                Data.OperationCount++;
+                operationCount++;
                 Data.operName = "Возведение в степень";
 
 
-                Form2 form = new Form2(Data.Result, Data.OperationCount, Data.operName);
+                Form2 form = new Form2(Data.Result, operationCount, Data.operName);
                 form.ShowDialog();
 
-                label4.Text = $"Результат: {Data.Result}\nОперации: {Data.OperationCount}";
+                label4.Text = $"Результат: {Data.Result}\nОперации: {operationCount}";
 
             }
             catch (Exception ex)
@@ -137,26 +137,37 @@ namespace new_form
                     return;
                 }
 
-                if (number1 > number2)
+                if (number1 > number2) //использование 2-ого способа для передачи данных между формами
                 {
-                    label4.Text = $"Число {number1} больше числа {number2}";
+                    label4.Text = $"Число {number1} больше числа {number2}\n Операции: {operationCount + 1}";
+                    operationCount++;
+                    operName = "сравнение";
+                    Form2 form = new Form2(result, operationCount, operName);
+                    form.Data2 = $"Число {number1} больше числа {number2}";
+                    form.ShowDialog();
                 }
                 else if (number1 < number2)
                 {
-                    label4.Text = $"Число {number1} меньше числа {number2}";
+                    label4.Text = $"Число {number1} меньше числа {number2}\n Операции: {operationCount + 1}";
+                    operationCount++;
+                    operName = "сравнение";
+                    Form2 form = new Form2(result, operationCount, operName);
+                    form.Data2 = $"Число {number1} меньше числа {number2}";
+                    form.ShowDialog();
                 }
                 else
                 {
-                    label4.Text = $"Числа {number1} и {number2} равны";
+                    label4.Text = $"Числа {number1} и {number2} равны\n Операции: {operationCount + 1}";
+                    operationCount++;
+                    operName = "сравнение";
+                    Form2 form = new Form2(result, operationCount, operName);
+                    form.Data2 = $"Числа {number1} и {number2} равны";
+                    form.ShowDialog();
                 }
 
-                operationCount++;
-                operName="сравнение";
-                Form2 form = new Form2(result, operationCount, operName);
-                form.Data2 = $"{result}\n{operationCount}\n{operName}";
-                form.ShowDialog();
-                
+                 
 
+                
             }
             catch (Exception ex)
             {
@@ -170,4 +181,4 @@ namespace new_form
 
 }
 
-//осталось изменить вывод в сравнении и добавить имя фамилию и группу на основную страницу
+//счётчик только по кнопке ок
