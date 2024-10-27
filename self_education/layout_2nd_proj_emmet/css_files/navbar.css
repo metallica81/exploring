@@ -1,0 +1,21 @@
+.menu_2nd_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-inline: 15vw;
+    padding-block: 3vw;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    border-bottom: 2px solid rgb(205, 205, 205);
+}
+
+.menu_2nd_page div:not(:first-child):hover {
+    color: #00A4E5;
+    cursor: pointer;
+    font-weight: bold;
+}
+.svg_menu {
+    width: 40vw; 
+}

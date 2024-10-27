@@ -1,0 +1,42 @@
+.signup_panel {
+    background-color: #171819;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.label {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.n2_buttons {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+.mail_button input{
+    width: 250px;
+    height: 38px;
+    border-radius: 0;
+    outline: none;
+    border: none;
+}
+.sign_but button{
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: #00A4E5;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.mail_button input::placeholder {
+    padding-left: 20px;
+}
