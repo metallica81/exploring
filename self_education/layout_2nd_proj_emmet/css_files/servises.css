@@ -1,12 +1,15 @@
 .services_page {
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    margin-inline: auto;
+    width: 941px;
+    height: 446px;
+    gap: 50px;
+    margin-bottom: 100px;
 }
 
 .our_cap_upper_nav {
     display: flex;
-    padding-inline: 15vw;
     justify-content: space-between;
 }
 
@@ -37,9 +40,7 @@
 
 .lowwer_part {
     display: flex;
-    margin: auto;
-    padding-inline: 15vw;
-    gap: 15px;
+    justify-content: space-between;
 }
 
 .icon_card_1 {

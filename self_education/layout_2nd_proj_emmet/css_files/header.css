@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    min-width: 941px;
     text-align: center;
     color: #fff;
 }
@@ -30,7 +31,7 @@
 }
 
 .d1th_block {
-    font-size: 7vh;
+    font-size: 3rem;
     font-weight: bold;
 }
 

@@ -1,17 +1,26 @@
 .main_foot_with_copy {
-    background-color: #000;
+    background-color: #171819;
+    min-width: 941px;
 }
 
 .footer {
+    background-color: #141A20;
+    padding-block: 50px;
+    width: 100vw;
+    margin-inline: auto;
+    min-width: 941px;
+}
+
+.less_wide_part {
     display: flex;
     background-color: #141A20;
     color: #fff;
     font-size: 0.8rem;
-    padding-inline: 10vw;
-    padding-block: 50px;
     justify-content: space-between;
-    width: 80vw;
+    width: 941px;
+    margin-inline: auto;
 }
+
 .com_icon {
     display: flex;
     flex-direction: column;
@@ -91,4 +100,5 @@
     padding-top: 30px;
     font-size: 0.8rem;
     width: 100vw;
+    min-width: 941px;
 }
