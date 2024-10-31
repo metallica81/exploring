@@ -5,6 +5,7 @@
 .fon img {
     background-size: contain;
     width: 100%;
+    min-width: 1048px;
     position: absolute;
     z-index: -1;
     filter: brightness(50%)
@@ -14,7 +15,7 @@ main {
     height: 100vh;
     margin-bottom: 40vh;
     color: white;
-    
+    min-width: 1048px;
 }
 
 .cont_1 {
@@ -29,7 +30,6 @@ main {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    height: 13vh;
     line-height: 5em;
     background-color: rgba(255,255,255,0.3);
     width: 100%;
@@ -83,11 +83,11 @@ main {
 }
 
 .bor {
-    margin-top: 15vh;
+    margin-top: 90px;
     border: 2px solid white;
     border-radius: 43px;
-    height: 8vh;
-    width: 22vw;
+    height: 50px;
+    width: 250px;
     position: relative;
 }
 
