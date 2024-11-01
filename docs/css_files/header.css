@@ -13,7 +13,7 @@
 } */
 
 .centeral_blocks {
-    background-image: url(/assets/bg_header.webp);
+    background-image: url(../assets/bg_header.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
