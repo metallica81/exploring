@@ -123,6 +123,7 @@
 
 // alert(accumulator.value); // выведет сумму этих значений
 
-let user = null;
+// let user = null;
 
-alert( user?.address );
+// alert( user?.address );
+
