@@ -4,7 +4,16 @@ const fs = require('fs');
 let parse_shatsionok = (async () => {
     const browser = await puppeteer.launch({headless: false});
     const page = await browser.newPage();
-    await page.goto('https://www.miit.ru/people/27900/timetable');
+    await page.goto('https://www.miit.ru/depts/21123/people'); //переходим в раздел сотрудников отдела инф ИЭФ
+
+    await page.click('a[href="/people/27900"]'); //переходим на стринцу Павла Васильевича
+
+    //здесь же оставлю на Врублёвского href="/people/405" на будущее
+    //Хомутов href="/people/488332"
+
+    await page.click('.page__sub-menu-header__title'); //раскрываем меню информации
+
+    await page.click('a[href="/people/27900/timetable"]'); //переходим в расписание
 
     let array_date = await page.evaluate(() => {
         
@@ -30,7 +39,7 @@ let parse_shatsionok = (async () => {
 
         }
 
-        return grouped_dates;
+        return grouped_dates.sort((a, b) => a[1] - b[1]); //делаем сортировку по числу
     })
 
     console.log(array_date);
