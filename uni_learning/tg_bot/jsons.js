@@ -6,7 +6,7 @@ const man = {name: "alex", age: 22, car: "vaz"};
 const data = {
     "name": "Шационок Павел Васильевич",
     "tg_id": 8199284,
-    "schedule": {
+    "schedule": [{
         "monday": [
             8,
             {
@@ -18,7 +18,26 @@ const data = {
                 "classroom": 3412
             }
         ]
-    }
+    },
+
+    {
+        "tuesday": [
+            9,
+            {
+                "num_les": 1,
+                "classroom": 3515
+            },
+            {
+                "num_les": 2,
+                "classroom": 3412
+            },
+            {
+                "num_les": 3,
+                "classroom": 3414
+            }
+        ]
+    },
+]
 };
 
 const combinedData = { man, data };

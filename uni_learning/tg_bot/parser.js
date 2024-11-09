@@ -76,7 +76,7 @@ async function writeDataToFile() {
         const data = await parse_shatsionok();
 
         // Преобразуем данные в JSON и записываем в файл
-        await fs.writeFile('data_base.json', JSON.stringify(data, null, 4));
+        await fs.writeFile('data_base_main.json', JSON.stringify(data, null, 4));
         console.log('File successfully written');
     } catch (err) {
         console.log('Error writing file:', err);

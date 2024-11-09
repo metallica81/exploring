@@ -1,0 +1,322 @@
+{
+    "data_1": {
+        "name": "Шационок Павел Васильевич",
+        "tg_id": "new_id",
+        "schedule_2nd_week": [
+            {
+                "Понедельник": [
+                    "4 ноября",
+                    {
+                        "num_les": "3",
+                        "classroom": 3215
+                    }
+                ]
+            },
+            {
+                "Вторник": [
+                    "5 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3212
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3302
+                    }
+                ]
+            },
+            {
+                "Среда": [
+                    "6 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3215
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3215
+                    },
+                    {
+                        "num_les": "4",
+                        "classroom": 3412
+                    },
+                    {
+                        "num_les": "5",
+                        "classroom": 3215
+                    }
+                ]
+            },
+            {
+                "Четверг": [
+                    "7 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3212
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3408
+                    },
+                    {
+                        "num_les": "7",
+                        "classroom": null
+                    }
+                ]
+            },
+            {
+                "Пятница": [
+                    "8 ноября",
+                    {
+                        "num_les": "7",
+                        "classroom": null
+                    }
+                ]
+            },
+            {
+                "Суббота": [
+                    "9 ноября",
+                    {
+                        "num_les": "1",
+                        "classroom": null
+                    }
+                ]
+            }
+        ],
+        "schedule_1th_week": [
+            {
+                "Понедельник": [
+                    "11 ноября",
+                    {
+                        "num_les": "3",
+                        "classroom": 3215
+                    }
+                ]
+            },
+            {
+                "Вторник": [
+                    "12 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3212
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3302
+                    }
+                ]
+            },
+            {
+                "Среда": [
+                    "13 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3215
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3215
+                    },
+                    {
+                        "num_les": "4",
+                        "classroom": 3412
+                    },
+                    {
+                        "num_les": "5",
+                        "classroom": 3215
+                    }
+                ]
+            },
+            {
+                "Четверг": [
+                    "14 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3212
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3408
+                    }
+                ]
+            },
+            {
+                "Пятница": [
+                    "15 ноября",
+                    {
+                        "num_les": "7",
+                        "classroom": null
+                    }
+                ]
+            },
+            {
+                "Суббота": [
+                    "16 ноября",
+                    {
+                        "num_les": "1",
+                        "classroom": null
+                    }
+                ]
+            }
+        ]
+    },
+    "data_2": {
+        "name": "Шационок Павел Васильевич",
+        "tg_id": "new_id",
+        "schedule_2nd_week": [
+            {
+                "Понедельник": [
+                    "4 ноября",
+                    {
+                        "num_les": "3",
+                        "classroom": 3215
+                    }
+                ]
+            },
+            {
+                "Вторник": [
+                    "5 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3212
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3302
+                    }
+                ]
+            },
+            {
+                "Среда": [
+                    "6 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3215
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3215
+                    },
+                    {
+                        "num_les": "4",
+                        "classroom": 3412
+                    },
+                    {
+                        "num_les": "5",
+                        "classroom": 3215
+                    }
+                ]
+            },
+            {
+                "Четверг": [
+                    "7 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3212
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3408
+                    },
+                    {
+                        "num_les": "7",
+                        "classroom": null
+                    }
+                ]
+            },
+            {
+                "Пятница": [
+                    "8 ноября",
+                    {
+                        "num_les": "7",
+                        "classroom": null
+                    }
+                ]
+            },
+            {
+                "Суббота": [
+                    "9 ноября",
+                    {
+                        "num_les": "1",
+                        "classroom": null
+                    }
+                ]
+            }
+        ],
+        "schedule_1th_week": [
+            {
+                "Понедельник": [
+                    "11 ноября",
+                    {
+                        "num_les": "3",
+                        "classroom": 3215
+                    }
+                ]
+            },
+            {
+                "Вторник": [
+                    "12 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3212
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3302
+                    }
+                ]
+            },
+            {
+                "Среда": [
+                    "13 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3215
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3215
+                    },
+                    {
+                        "num_les": "4",
+                        "classroom": 3412
+                    },
+                    {
+                        "num_les": "5",
+                        "classroom": 3215
+                    }
+                ]
+            },
+            {
+                "Четверг": [
+                    "14 ноября",
+                    {
+                        "num_les": "2",
+                        "classroom": 3212
+                    },
+                    {
+                        "num_les": "3",
+                        "classroom": 3408
+                    }
+                ]
+            },
+            {
+                "Пятница": [
+                    "15 ноября",
+                    {
+                        "num_les": "7",
+                        "classroom": null
+                    }
+                ]
+            },
+            {
+                "Суббота": [
+                    "16 ноября",
+                    {
+                        "num_les": "1",
+                        "classroom": null
+                    }
+                ]
+            }
+        ]
+    }
+}
