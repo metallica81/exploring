@@ -107,7 +107,7 @@ let parse_officer_shatsionok = (async () => {
                         const text = lesson.textContent.trim();
                         const match = text.match(/^\d+/); // Ищем первое число
                         if (match) {
-                            num_lessons.push(match[0]); // Добавляем номер занятия в массив
+                            num_lessons.push(Number(match[0])); // Добавляем номер занятия в массив
                         }
                     });
 
@@ -268,7 +268,7 @@ let parse_officer_vrublevskiy = (async () => {
                         const text = lesson.textContent.trim();
                         const match = text.match(/^\d+/); // Ищем первое число
                         if (match) {
-                            num_lessons.push(match[0]); // Добавляем номер занятия в массив
+                            num_lessons.push(Number(match[0])); // Добавляем номер занятия в массив
                         }
                     });
 
@@ -427,7 +427,7 @@ let parse_officer_homutov = (async () => {
                         const text = lesson.textContent.trim();
                         const match = text.match(/^\d+/); // Ищем первое число
                         if (match) {
-                            num_lessons.push(match[0]); // Добавляем номер занятия в массив
+                            num_lessons.push(Number(match[0])); // Добавляем номер занятия в массив
                         }
                     });
 
