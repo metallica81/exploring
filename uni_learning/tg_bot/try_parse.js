@@ -1,8 +1,11 @@
+
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 // const data_base_info = require("./data_base_new");
 
-let parse_officer_shatsionok = (async () => {
+const tg_PersonalID = 885326963;
+
+let parse_officer_shatsionok = (async (tg_PersonalID) => {
 
     const browser = await puppeteer.launch({headless: false}); //headless - открытие в фоновом режиме
     const page = await browser.newPage();
@@ -17,14 +20,13 @@ let parse_officer_shatsionok = (async () => {
 
     await page.click('a[href="/people/27900/timetable"]'); //переходим в расписание
 
-    let array_date = await page.evaluate(() => {
+    let array_date = await page.evaluate((tg_PersonalID) => {
         
         function parse_date() {
             
             const data = {
                 name: "Шационок Павел Васильевич",
-                tg_id: "new_id",
-                
+                tg_id: tg_PersonalID,
             };
             
 
@@ -157,15 +159,15 @@ let parse_officer_shatsionok = (async () => {
         
         return parse_date();
 
-    })
+    }, tg_PersonalID)
     
     await browser.close();
 
     return array_date;
-})
+});
 
 
-let parse_officer_vrublevskiy = (async () => {
+let parse_officer_vrublevskiy = (async (tg_PersonalID) => {
 
     const browser = await puppeteer.launch({headless: false}); //headless - открытие в фоновом режиме
     const page = await browser.newPage();
@@ -178,13 +180,13 @@ let parse_officer_vrublevskiy = (async () => {
 
     await page.click('a[href="/people/405/timetable"]'); //переходим в расписание
 
-    let array_date = await page.evaluate(() => {
+    let array_date = await page.evaluate((tg_PersonalID) => {
         
         function parse_date() {
             
             const data = {
                 name: "Врублевский Константин Эдуардович",
-                tg_id: "new_id",
+                tg_id: tg_PersonalID,
                 
             };
             
@@ -318,14 +320,14 @@ let parse_officer_vrublevskiy = (async () => {
         
         return parse_date();
 
-    })
+    }, tg_PersonalID)
     
     await browser.close();
 
     return array_date;
-})
+});
 
-let parse_officer_homutov = (async () => {
+let parse_officer_homutov = (async (tg_PersonalID) => {
 
     const browser = await puppeteer.launch({headless: false}); //headless - открытие в фоновом режиме
     const page = await browser.newPage();
@@ -337,14 +339,13 @@ let parse_officer_homutov = (async () => {
 
     await page.click('a[href="/people/488332/timetable"]'); //переходим в расписание
 
-    let array_date = await page.evaluate(() => {
+    let array_date = await page.evaluate((tg_PersonalID) => {
         
         function parse_date() {
             
             const data = {
                 name: "Хомутов Андрей Сергеевич",
-                tg_id: "new_id",
-                
+                tg_id: tg_PersonalID,
             };
             
 
@@ -477,7 +478,7 @@ let parse_officer_homutov = (async () => {
         
         return parse_date();
 
-    })
+    }, tg_PersonalID)
     
     await browser.close();
 
@@ -488,9 +489,9 @@ let parse_officer_homutov = (async () => {
 async function writeDataToFile() {
     try {
         // Дожидаемся данных от обеих функций
-        const data_shatsionok = await parse_officer_shatsionok(); 
-        const data_vrublevskiy = await parse_officer_vrublevskiy(); 
-        const data_homutov = await parse_officer_homutov();
+        const data_shatsionok = await parse_officer_shatsionok(tg_PersonalID); 
+        const data_vrublevskiy = await parse_officer_vrublevskiy(tg_PersonalID); 
+        const data_homutov = await parse_officer_homutov(tg_PersonalID);
 
         // Создаем объект с данными
         const combinedData = {

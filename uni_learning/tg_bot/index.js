@@ -32,6 +32,11 @@ bot.command('start', async (ctx) => {
 
 // Функция для отправки сообщения пользователю по `chat_id`
 async function sendMessageToUser(chatId, message) {
+    if (!chatId || isNaN(chatId)) {
+        console.error("Некорректный chatId:", chatId);
+        return;
+    }
+
     try {
         await bot.api.sendMessage(chatId, message);
         console.log("Сообщение отправлено!");

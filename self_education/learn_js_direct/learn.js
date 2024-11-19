@@ -127,3 +127,8 @@
 
 // alert( user?.address );
 
+let s = 0;
+for (let i = 11; i < 40; i++) {
+    s += (i - 22.88) ** 2;
+}
+console.log(s/49);

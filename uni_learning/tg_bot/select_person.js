@@ -24,6 +24,10 @@ function formatDateToDBStyle(date) {
 // let num_study = 1;
 // let num_classroom = 3212;
 
+// Создаем стек для очереди преподавателей (FILO)
+    
+const instructorStack = ['data_shatsionok', 'data_vrublevskiy', 'data_homutov']; // Приоритетный порядок преподавателей
+
 // Функция для поиска ближайшей аудитории для заданного преподавателя
 function findClosestClassroom(num_study, num_classroom) {
     const today = moment(); // Используем текущую дату
@@ -37,12 +41,10 @@ function findClosestClassroom(num_study, num_classroom) {
     let closestClassroom = Infinity; // Для отслеживания наиболее близкой аудитории
     let instuct_id = null;
 
-    // Создаем стек для очереди преподавателей (FILO)
-    const instructorStack = ['data_shatsionok', 'data_vrublevskiy', 'data_homutov']; // Приоритетный порядок преподавателей
-
     // Перебираем преподавателей из стека
-    while (instructorStack.length > 0) {
-        const instructorKey = instructorStack.pop();  // Извлекаем преподавателя из конца стека
+    for(let i = 0; i < instructorStack.length; i++) {
+        //console.log("Очередь в текущеим круге", instructorStack);
+        const instructorKey = instructorStack[instructorStack.length-1-i];  // Извлекаем преподавателя из конца стека
         const instructor = data[instructorKey];
         if (!instructor) {
             //console.log(`Пропущен ${instructorKey}, так как данных нет.`);
@@ -66,7 +68,7 @@ function findClosestClassroom(num_study, num_classroom) {
                 //console.log(`Проверка дня недели ${dayOfWeek}, данные занятий:`, lessonsArray);
 
                 if (Array.isArray(lessonsArray) && lessonsArray[0] === currentFormattedDate) {
-                    console.log(`Найдена дата ${currentFormattedDate} у ${instructor.name} в ${dayOfWeek}`);
+                    //console.log(`Найдена дата ${currentFormattedDate} у ${instructor.name} в ${dayOfWeek}`);
                     
                     for (let i = 1; i < lessonsArray.length; i++) {
                         const lesson = lessonsArray[i];
@@ -102,8 +104,11 @@ function findClosestClassroom(num_study, num_classroom) {
     }
 
     // Если ни одного преподавателя с занятием не найдено, выбираем первого преподавателя в instructorStack
+    //console.log(closestInstructor, instructorStack.length);
     if (!closestInstructor && instructorStack.length > 0) {
+        //console.log("Случай с отсутсвующим преподом");
         const fallbackInstructor = data[instructorStack[0]];
+        //console.log("Запасной препод", data[instructorStack[0]]);
         if (fallbackInstructor) {
             closestInstructor = fallbackInstructor.name;
             instuct_id = fallbackInstructor.tg_id;
@@ -112,12 +117,17 @@ function findClosestClassroom(num_study, num_classroom) {
         }
     }
 
+    let newInstructorKey = instructorStack.shift();   // Вносим изменеия в очередь (fifo)
+    instructorStack.push(newInstructorKey);
+    console.log("изменённая очередь", instructorStack)
+
     if (closestInstructor) {
         return [closestInstructor, `Этаж ${closestFloor}`, instuct_id];
     } else {
         return "Нет занятий для текущей пары на эту дату.";
     }
-}
+  
+}   
 
 
 module.exports = { findClosestClassroom }; // Экспортирую функцию для использозвания внутри бота
@@ -129,5 +139,3 @@ function getFloor(classroom) {
 
 // Вызов функции после загрузки данных
 //console.log(findClosestClassroom(num_study, num_classroom));
-
-
