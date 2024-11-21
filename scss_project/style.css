@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* Цвета шрифтов */
+/* Цвета фонов */
+/* Часто встречающиеся длины */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inter", serif;
+  font-weight: bold;
+}
+
+._1thPage {
+  background-image: url(assets/myPict/bg_2ndtry.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  min-width: 1000px;
+  width: 100%;
+  height: 456px;
+}
+
+.serch_new_auto {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* меню нахождения машины по фильтрам */
+.find_car_params {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 2;
+  column-gap: 40px;
+  row-gap: 20px;
+  width: 960px;
+  height: 200px;
+  padding: 65px 35px;
+  background-color: #ECEDED;
+  border-radius: 8px;
+  margin: 350px auto;
+}
+.find_car_params span {
+  width: 240px;
+}
+.find_car_params div {
+  width: auto;
+}
+
+.carBrand {
+  display: flex;
+  flex-direction: column;
+}
+.carBrand select {
+  width: 240px;
+  height: 36px;
+}
+
+.carModel {
+  display: flex;
+  flex-direction: column;
+}
+.carModel select {
+  width: 240px;
+  height: 36px;
+}
+
+.transmissionType {
+  display: flex;
+  flex-direction: column;
+}
+.transmissionType button {
+  width: 80px;
+  height: 36px;
+}
+.transmissionType .transButtons {
+  display: flex;
+  gap: 22px;
+}
+
+.costFrom {
+  display: flex;
+  flex-direction: column;
+}
+.costFrom select {
+  width: 240px;
+  height: 36px;
+}
+
+.costUntil {
+  display: flex;
+  flex-direction: column;
+}
+.costUntil select {
+  width: 240px;
+  height: 36px;
+}
+
+.showSuggesions button {
+  width: 286px;
+  height: 49px;
+}
+
+/* здесь буду писать примечания на следующую сессию
+- нужно не забыть про opacity 60
+- вернуться к воросу с машиной
+- после доведения фильтров подводим в px perfect *//*# sourceMappingURL=style.css.map */

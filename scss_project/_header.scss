@@ -1,0 +1,133 @@
+/* Цвета шрифтов */
+$headersColor: #353535;
+$buttonPlaceHolderColor: #6C6C6C;
+$governHelpColor: #4A4A4A;
+
+/* Цвета фонов */
+
+$filterBGColor: #ECEDED;
+$giftRadialGradientColor: #118CC8CC;
+$governmentFinHelpColor: #EFF0F0;
+
+
+/* Часто встречающиеся длины */
+
+$borderRadius: 8px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font: {
+        // family: "Oswald", serif;
+        // family: "Red Hat Display", sans-serif;
+        family: "Inter", serif;
+        weight: bold;
+    }
+}
+
+._1thPage {
+    background: {
+        image: url(assets/myPict/bg_2ndtry.jpg);
+        size: cover;
+        repeat: no-repeat;
+        position: bottom;
+        attachment: fixed;
+    }
+    min-width: 1000px;
+    width: 100%;
+    height: 456px;
+}
+
+.serch_new_auto {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+// .img_car {
+//     height: 250px;
+//     aspect-ratio: 16 / 10;
+//     margin: 17% 0% 0% 17%;
+// }
+
+/* меню нахождения машины по фильтрам */
+$buttonWidth: 240px;
+$buttonHeight: 36px;
+
+.find_car_params {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 2;
+    column-gap: 40px;
+    row-gap: 20px;
+    span {
+        width: $buttonWidth;
+    }
+    div {
+        width:auto
+    }
+    width: 960px;
+    height: 200px;
+    padding: 65px 35px;
+    background-color: $filterBGColor;
+    border-radius: $borderRadius;
+    margin: 350px auto;
+}
+
+.carBrand {
+    display: flex;
+    flex-direction: column;
+    select {
+        width: $buttonWidth;
+        height: $buttonHeight;
+    }
+}
+.carModel {
+    display: flex;
+    flex-direction: column;
+    select {
+        width: $buttonWidth;
+        height: $buttonHeight;
+    }
+}
+.transmissionType {
+    display: flex;
+    flex-direction: column;
+    button {
+        width: 80px;
+        height: $buttonHeight;
+    }
+    .transButtons {
+        display: flex;
+        gap: 22px;
+    }
+}
+.costFrom {
+    display: flex;
+    flex-direction: column;
+    select {
+        width: $buttonWidth;
+        height: $buttonHeight;
+    }
+}
+.costUntil {
+    display: flex;
+    flex-direction: column;
+    select {
+        width: $buttonWidth;
+        height: $buttonHeight;
+    }
+}
+.showSuggesions {
+    button {
+        width: 286px;
+        height: 49px;
+    }
+}
+
+
+
+/* здесь буду писать примечания на следующую сессию
+- нужно не забыть про opacity 60
+- вернуться к воросу с машиной
+- после доведения фильтров подводим в px perfect */
