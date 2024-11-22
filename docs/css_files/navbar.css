@@ -1,0 +1,34 @@
+.menu_2nd_page {
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgb(205, 205, 205);
+
+}
+
+.wrapper_center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    padding-block: 25px;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    width: 941px;
+}
+
+.menu_2nd_page div:not(:first-child):hover {
+    color: #00A4E5;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu_2nd_page div:not(:first-child) {
+    flex-grow: 1;
+    width: 50px;
+    text-align: right;
+}
+
+.svg_menu {
+    flex-grow: 15;
+}
+

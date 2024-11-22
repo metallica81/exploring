@@ -1,0 +1,33 @@
+.connect_page {
+    width: 100vw;
+    min-width: 941px;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    background-image: url(../assets/bg_footer.webp);
+    /* aspect-ratio: 16/9; */
+    margin-bottom: -2px;
+}
+
+.main_title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.but_getintouch button{
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: #00A4E5;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+}
